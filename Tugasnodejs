@@ -4,20 +4,25 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
     });
-rl.question("Nama Lengkap", (name) => {
-console.log(`Thank you ${name}`);
-rl.question("Nama Panggilan", (name) => {
-console.log(`Thank you ${name}`);
-rl.question("Tempat dan Tanggal Lahir", (name) => {
-console.log(`Thank you ${name}`);
-rl.question("Jenis Kelamin", (name) => {
-console.log(`Thank you ${name}`);
-rl.question("Nomor Telepon", (name) => {
-console.log(`Thank you ${name}`);
-rl.question("Email", (name) => {
-console.log(`Thank you ${name}`);
-rl.question("Alamat", (name) => {
-console.log(`Thank you ${name}`);
-
-rl.close();
+rl.question("Nama Lengkap ", (name) => {
+    rl.question("Nama Panggilan ", (np) => {
+        rl.question("Tempat dan Tanggal Lahir ", (ttl) => {
+            rl.question("Jenis Kelamin ", (jk) => {
+                rl.question("Nomor Telepon ",(nt) => {
+                    rl.question("Email ", (e) => {
+                        rl.question("Alamat ", (almt) => {
+                        console.log(`Nama Lengkap ${name}`);
+                        console.log(`Nama Panggilan ${np}`);
+                        console.log(`Tempat dan Tanggal Lahir ${ttl}`);
+                        console.log(`Jenis Kelamin ${jk}`);
+                        console.log(`Nomor Telepon ${nt}`);
+                        console.log(`Email ${e}`);
+                        console.log(`Alamat ${almt}`);
+                        rl.close();
+                    })
+                    })
+              })
+            })
+        })
+    })
 });

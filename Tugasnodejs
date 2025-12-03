@@ -1,0 +1,23 @@
+const readline = require("readline");
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+    });
+rl.question("Nama Lengkap", (name) => {
+console.log(`Thank you ${name}`);
+rl.question("Nama Panggilan", (name) => {
+console.log(`Thank you ${name}`);
+rl.question("Tempat dan Tanggal Lahir", (name) => {
+console.log(`Thank you ${name}`);
+rl.question("Jenis Kelamin", (name) => {
+console.log(`Thank you ${name}`);
+rl.question("Nomor Telepon", (name) => {
+console.log(`Thank you ${name}`);
+rl.question("Email", (name) => {
+console.log(`Thank you ${name}`);
+rl.question("Alamat", (name) => {
+console.log(`Thank you ${name}`);
+
+rl.close();
+});

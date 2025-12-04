@@ -17,7 +17,7 @@ output: process.stdout
 });
 
 rl.question("What is your name? ", (name) => {
-console.log(`Thank you ${name}`);
+    console.log(`Thank you ${name}`);
 
-rl.close();
+    rl.close();
 });

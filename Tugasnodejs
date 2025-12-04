@@ -9,14 +9,14 @@ rl.question("Nama Lengkap ", (name) => {
         rl.question("Tempat dan Tanggal Lahir ", (ttl) => {
             rl.question("Jenis Kelamin ", (jk) => {
                 rl.question("Nomor Telepon ",(nt) => {
-                    rl.question("Email ", (e) => {
+                    rl.question("Email ", (eml) => {
                         rl.question("Alamat ", (almt) => {
                         console.log(`Nama Lengkap ${name}`);
                         console.log(`Nama Panggilan ${np}`);
                         console.log(`Tempat dan Tanggal Lahir ${ttl}`);
                         console.log(`Jenis Kelamin ${jk}`);
                         console.log(`Nomor Telepon ${nt}`);
-                        console.log(`Email ${e}`);
+                        console.log(`Email ${eml}`);
                         console.log(`Alamat ${almt}`);
                         rl.close();
                     })

@@ -1,0 +1,18 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "Learn NPM",
+  "license": "ISC",
+  "author": "Urip Subur",
+  "type": "commonjs",
+  "main": "tes_npm.js",
+  "scripts": {
+    "start": "nodemon apps.js",
+    "fol": "ls",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "mon": "^0.0.8",
+    "validator": "^13.15.23"
+  }
+}

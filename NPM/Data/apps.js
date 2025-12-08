@@ -12,4 +12,10 @@ rl.close();
 }
 ;
 main()
-        
+    
+//save data contact
+const contacts = require ('./contacts')
+
+const main = async ()=>{
+    const name =await contacts.questions('What is your name?');
+    const email=await contacts.questions('your email?');

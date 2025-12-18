@@ -1,0 +1,30 @@
+<h1>Contact Page</h1>
+<a href="/contact/add" class="btn btn-primary">Add Contact
+Data</a>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Mobile</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+      <% contacts.forEach(conts => { %>
+    
+        <tr>
+            <th scope="row">1</th>
+            <td><%= conts.name %></td>
+            <td><%= conts.email %></td>
+            <td><%= conts.mobile %></td>
+        <td><a class="btn btn-success" href="/contact/<%= conts.name %>">detail</a></td>
+
+        </tr>
+        <% }) %>
+      
+    
+
+  </tbody>
+</table>

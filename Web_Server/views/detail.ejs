@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Detail contacts</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary"><%= contacts.name %></h6>
+    <p class="card-text"><%= contacts.email %></p>
+    <p class="card-text"><%= contacts.mobile %></p>
+    <a href="/contact/delete/<%= contacts.name %>" class="btn btn-danger badge" onclick="return confirm('Are you sure to delete <%= contacts.name %>?')">Delete</a>
+    <a href="/contact/update/<%= contacts.name %>" class="btn btn-success badge">Update</a>
+    <a href="/contact" class="card-link d-block mt-3">Back to Contact Page</a>
+      </div>
+    </div>
+      

@@ -1,0 +1,17 @@
+<h2>Contact List</h2>
+
+<table border="1" cellpadding="10">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Mobile</th>
+  </tr>
+
+  <% contacts.forEach(c => { %>
+    <tr>
+      <td><%= c.name %></td>
+      <td><%= c.email %></td>
+      <td><%= c.mobile %></td>
+    </tr>
+  <% }) %>
+</table>
